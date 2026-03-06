@@ -48,10 +48,8 @@ if uploaded_file:
         # Paso 2: VECTORIZACIÓN DEL TEXTO (TF-IDF)
        
         # TfidfVectorizer convertirá textos en vectores numéricos ponderados.
-        # 'stop_words' en inglés, eliminará las palabras vacías (stop words) en este caso en inglés 
-        # durante el preprocesamiento del texto, se podría cambiar a 'spanish' 
-        # o proporcionar una lista de stopwords.
-        vectorizer = TfidfVectorizer(stop_words="english")
+        # 'stop_words' en español, eliminará las palabras vacías (stop words) en este caso en español 
+        vectorizer = TfidfVectorizer(stop_words="spanish")
 
         # Se ajusta el vocabulario y se transforma todo el conjunto (fit_transform).
         # aprende el vocabulario e IDF a partir de todos los textos de email
